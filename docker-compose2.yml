@@ -21,8 +21,9 @@ services:
     container_name: php73
     volumes:
       - ./var/www/html:/var/www/html
+      - ./etc/apache2/sites-available:/etc/apache2/sites-available
     ports:
-      - 80:80
+      - 80:8080
 volumes:
   mysql-db:  
      
